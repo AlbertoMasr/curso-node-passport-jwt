@@ -19,6 +19,8 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=root
     ports:
       - 5050:80
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
 
   mysql:
     image: mysql:5
